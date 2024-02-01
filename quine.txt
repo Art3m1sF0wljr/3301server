@@ -1,0 +1,16 @@
+c = []
+c.append('c = []')
+c.append('f = lambda k: "c.append(" + repr(k) + ")"')
+c.append('print c[0]')
+c.append('print f(c[0])')
+c.append('for line in c[1:]:')
+c.append('   print f(line)')
+c.append('for line in c[1:]:')
+c.append('   print line')
+f = lambda k: "c.append(" + repr(k) + ")"
+print c[0]
+print f(c[0])
+for line in c[1:]:
+   print f(line)
+for line in c[1:]:
+   print line
